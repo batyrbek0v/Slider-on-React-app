@@ -1,0 +1,28 @@
+.dots_block{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    .dots{
+        width: 10%;
+        height: 3px;
+        background-color: #9b0a2c6c;
+        transition: .6s;
+        @media (min-width:1024px) {
+            width: 5%;
+        }
+    }
+    .dots.active{
+        width: 4%;
+        height: 12px;
+        border-radius: 12px;
+        background-color: #CC2442;
+        transform: rotate(-180deg);
+        height: 8px;
+        @media (min-width:1024px) {
+            transform: rotatey(-360deg);
+            width: 2%;
+        }
+    }
+}
